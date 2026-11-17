@@ -1,0 +1,221 @@
+{
+ "meta": {
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "theme": "whiteboard",
+  "audio": "",
+  "disclaimer": "This video is for educational purposes only and is not financial advice.",
+  "disclaimer_seconds": 4.0,
+  "total_frames": 1680
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "type": "TitleCard",
+   "narration": "x",
+   "props": {
+    "title": "1 Lot vs 13 Lots",
+    "subtitle": "Why position size changes everything"
+   },
+   "assets": [],
+   "cues": [],
+   "start_frame": 0,
+   "duration_frames": 180
+  },
+  {
+   "id": "s02",
+   "type": "ComparisonSplit",
+   "narration": "x",
+   "props": {
+    "left": {
+     "label": "1 LOT",
+     "items": [
+      "₹100 per point",
+      "10 pt move = ₹1,000",
+      "Small, survivable loss"
+     ],
+     "accent": "green"
+    },
+    "right": {
+     "label": "13 LOTS",
+     "items": [
+      "₹1,300 per point",
+      "10 pt move = ₹13,000",
+      "One bad trade hurts"
+     ],
+     "accent": "red"
+    }
+   },
+   "assets": [],
+   "cues": [],
+   "start_frame": 180,
+   "duration_frames": 180
+  },
+  {
+   "id": "s03",
+   "type": "FlowchartNodes",
+   "narration": "x",
+   "props": {
+    "nodes": [
+     {
+      "id": "a",
+      "label": "Set max loss"
+     },
+     {
+      "id": "b",
+      "label": "Find risk per lot"
+     },
+     {
+      "id": "c",
+      "label": "Divide"
+     },
+     {
+      "id": "d",
+      "label": "Place trade"
+     }
+    ],
+    "edges": [
+     {
+      "from": "a",
+      "to": "b"
+     },
+     {
+      "from": "b",
+      "to": "c"
+     },
+     {
+      "from": "c",
+      "to": "d"
+     }
+    ]
+   },
+   "assets": [],
+   "cues": [],
+   "start_frame": 360,
+   "duration_frames": 180
+  },
+  {
+   "id": "s04",
+   "type": "BarChartAnimated",
+   "narration": "x",
+   "props": {
+    "bars": [
+     {
+      "label": "1 lot",
+      "value": 1000,
+      "color": "green"
+     },
+     {
+      "label": "13 lots",
+      "value": 13000,
+      "color": "red"
+     }
+    ],
+    "unit": "",
+    "callouts": [
+     {
+      "bar": "13 lots",
+      "text": "13x the loss"
+     }
+    ]
+   },
+   "assets": [],
+   "cues": [],
+   "start_frame": 540,
+   "duration_frames": 180
+  },
+  {
+   "id": "s05",
+   "type": "MathFormulaBox",
+   "narration": "x",
+   "props": {
+    "steps": [
+     {
+      "expr": "13 × ₹100 = ₹1,300",
+      "note": "cost per point"
+     },
+     {
+      "expr": "₹1,300 × 10 = ₹13,000",
+      "note": "on a 10 point move"
+     }
+    ],
+    "highlight_last": true
+   },
+   "assets": [],
+   "cues": [],
+   "start_frame": 720,
+   "duration_frames": 180
+  },
+  {
+   "id": "s06",
+   "type": "ChecklistCard",
+   "narration": "x",
+   "props": {
+    "items": [
+     "Decide max loss first",
+     "Divide by risk per lot",
+     "Never add to a loser"
+    ],
+    "disclaimer": "Educational only"
+   },
+   "assets": [],
+   "cues": [],
+   "start_frame": 900,
+   "duration_frames": 180
+  },
+  {
+   "id": "s07",
+   "type": "IllustrationScene",
+   "narration": "x",
+   "props": {
+    "heading": "Know your edge",
+    "body": "We all have industries we know better than the average person.",
+    "bubble": {
+     "text": "WHAT???",
+     "anchor_asset": "a1"
+    }
+   },
+   "assets": [
+    {
+     "id": "a1",
+     "query": "store"
+    },
+    {
+     "id": "a2",
+     "query": "piano"
+    },
+    {
+     "id": "a3",
+     "query": "surfer"
+    }
+   ],
+   "cues": [],
+   "start_frame": 1080,
+   "duration_frames": 180
+  },
+  {
+   "id": "s08",
+   "type": "QuoteTitle",
+   "narration": "x",
+   "props": {
+    "number": 2,
+    "quote": "If you like the store, chances are you'll love the stock",
+    "body": "Look at what you already use every day."
+   },
+   "assets": [
+    {
+     "id": "a1",
+     "query": "store"
+    },
+    {
+     "id": "a2",
+     "query": "laptop"
+    }
+   ],
+   "cues": [],
+   "start_frame": 1260,
+   "duration_frames": 180
+  }
+ ]
+}

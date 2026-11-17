@@ -1,0 +1,8 @@
+faster-whisper
+google-genai
+pydantic>=2
+python-dotenv
+rapidfuzz
+num2words
+pytest
+av>=11,<17   # av 19 breaks faster-whisper 1.2.1 (metadata_errors)

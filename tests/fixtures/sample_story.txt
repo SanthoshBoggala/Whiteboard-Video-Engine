@@ -1,0 +1,5 @@
+Why one lot is not the same as thirteen lots. Most beginners think position size does not matter, but it decides how much you can lose on one bad trade.
+
+Suppose one lot costs 100 rupees per point. Thirteen lots cost 1300 rupees per point, so a ten point move changes your account by 13000 rupees instead of 1000.
+
+Always size your position before you enter. Decide your maximum loss first, then divide by the risk per lot. This keeps one mistake from ending your account.
